@@ -26,4 +26,4 @@
 		- "cat update.txt" --> it show the content that is already present in file
 		- "echo 'write line to add in update file at the end of the file' >> update.txt"
 		- the add, commit and push file
----> then rest of the day practice on yesterday code.
+---> then rest of the day practice on yesterday code .
