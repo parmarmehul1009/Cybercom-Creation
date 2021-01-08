@@ -1,9 +1,5 @@
 /* Css start for image logo  */
 
-body {
-    background-color: aqua;
-}
-
 .logo {
     justify-content: center;
     padding-top: 30px;
@@ -55,10 +51,17 @@ body {
     margin-left: 30px;
 }
 
-.image-caption img {
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-weight: 800;
     width: 215px;
     height: 315px;
     margin-bottom: 0px;
+    color: white;
 }
 
 .figure-caption {
@@ -77,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 50%;
+    width: 950px;
 }
 
 
