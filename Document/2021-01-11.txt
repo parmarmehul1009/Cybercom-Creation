@@ -1,0 +1,35 @@
++++++++++++++++++++++++++      2021-01-11    +++++++++++++++++++++++++++
+
+---> Today i have learn from videos
+	- introduction of function
+	- function declaration and Expresion
+	- function calling 
+	- introduction of array
+    - add elemet in array
+    - remove element from array
+    - find the length of array
+    - Equality Operators_== vs. ===
+    - Truthy and Falsy Values
+    - The Switch Statement
+    - The Conditional (Ternary) Operator
+    - Boolean Logic
+    - BASIC boolean logic : AND, & OR NOT OPERATORS
+
+--> after this all i have solve the coding challenge2
+
+--> then ptactice on HTML and CSS
+    - radio button
+    - checkbox
+    - input type file
+    - submit and reset button
+    - how to use card in HTML
+
+--> name and id must be same
+
+--> id must be unique
+
+--> use for property in lable tab for which input we use this lable
+
+--> make HTML_practice1 and HTML_practice2 from the today's practice folder
+
+--> solve the challenge of "please enter the PDF file" in input file 
