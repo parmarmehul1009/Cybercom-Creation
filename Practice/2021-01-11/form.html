@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+</head>
+
+<body>
+    <h1>
+        <center>Form Practice</center>
+    </h1>
+    <div class="container">
+        <form onsubmit="filevalidate()">
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <label for="gender" class="col-form-label col-sm-2 pt-0">Gender</label>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="gender1" value="Male">
+                            <label class="form-check-label" for="gender1">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="gender2" value="Female">
+                            <label class="form-check-label" for="gender2">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Checkbox</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="choice1" value="choice1" id="choice1">
+                        <label class="form-check-label" for="choice1">Choice 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="choice2" value="choice2" id="choice2">
+                        <label class="form-check-label" for="choice2">Choice 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="choice3" value="choice3" id="choice3">
+                        <label class="form-check-label" for="choice3">Choice 3</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="select-menu" class="col-sm-2 col-form-label">Select Menu</label>
+                <div class="col-sm-10">
+                    <select class="custom-select" name="select-menu" id="select-menu">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="from-group row">
+                <label for="file" class="col-sm-2 col-form-label">Select File</label>
+                <div class="col-sm-10">
+                    <input type="file" class="form-control" id="btnUpload" name="file" placeholder="Email">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary flex-column">Submit</button>
+            <button type="reset" class="btn btn-primary flex-column">Reset</button>
+        </form>
+
+    </div>
+    <script>
+        function filevalidate() {
+            var myfile = document.forms[0].file.value;
+            var ext = myfile.substring(myfile.lastIndexOf(".") + 1, myfile.length)
+            if (ext.toLowerCase() != 'pdf') {
+                alert("Please enter PDF only");
+                return false;
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

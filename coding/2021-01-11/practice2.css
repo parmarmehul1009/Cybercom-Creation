@@ -1,0 +1,53 @@
+.div-title {
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.div-paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-profile {
+    width: 18rem;
+    margin: 20px;
+    box-shadow: 0px 10px 20px 0px;
+}
+
+img {
+    width: 75px;
+    height: 75px;
+}
+
+.about-profile {
+    margin-top: 15px;
+}
+
+.card-footer {
+    border-top-width: 1px;
+    border-top-color: gray;
+    background-color: inherit;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card__footer-title {
+    font-weight: 800;
+    font-family: Arial;
+    font-size: large;
+    color: black;
+}
+
+.card__footer-meta {
+    font-weight: 600;
+    font-family: Arial;
+    color: #999;
+}
