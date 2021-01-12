@@ -48,4 +48,4 @@
 
 --> What is <noscript> what is use of this
 
---> make HTML_practice1 from the today's practice folder
+--> What is different between localStorage and sessionStorage
