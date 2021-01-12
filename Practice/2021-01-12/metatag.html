@@ -7,10 +7,10 @@
     <!-- this viewport atribute is used to define the width and initial scalebility on every device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- this atribute is used for define the author name of this webpage -->
-    <meta name="author" content="Mahnaz Mohtashim" />
+    <meta name="author" content="Mehul parmar" />
     <!-- this atribute is used to type a ket word so our webpage get search for google -->
     <meta name="keywords" content="HTML, Meta Tags, Metadata" />
-    <!-- this atribute is used to desctibe the webpage in short -->
+    <!-- this atribute is used to describe the webpage in short -->
     <meta name="description" content="Learning about Meta Tags." />
     <!-- this atribute is used for to give the information about revised of this webpage -->
     <meta name="revised" content="cybercom-creation, 12/01/2021" />
@@ -22,25 +22,55 @@
     <meta http-equiv="refresh" content="5; url = http://www.cybercom.co.in" />
     <!-- this atribute is used to store the cookies and there value and define the time and date when the cookie expire  -->
     <meta http-equiv="cookie" content="userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
-    <!-- this atribute is used for  -->
+    <script>
+        function clickCounter() {
+            if (typeof(Storage) !== "undefined") {
+                if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                } else {
+                    sessionStorage.clickcount = 1;
+                }
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                document.getElementById("session").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+                document.getElementById("local").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s) on this browser";
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+            }
+        }
+    </script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>
-        <center>About: &lt;meta&gt;
-        </center>
-    </h1>
-    <div>
-        <p>
-            <center>After 5 second page will be redirect to cybercom website</center>
-        </p>
-    </div>
-    <noscript>
+    <center>
+        <h1>
+            About: &lt;meta&gt;
+
+        </h1>
+        <div>
+            <p>
+                After 5 second page will be redirect to cybercom website
+            </p>
+        </div><br><br><br>
+        <h1>This is for localStorage and sessionStorage</h1>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="session"></div>
+        <div id="local"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter is reset.</p><br><br><br>
+
+        <h1>This is for &lt;noscript&gt;</h1>
+        <noscript>
         <!-- anchor linking to external file -->
         <a href="https://www.mozilla.com/">External Link</a>
       </noscript>
-    <p>Rocks!</p>
+        <p>Rocks!</p>
+    </center>
+
 </body>
 
 </html>
