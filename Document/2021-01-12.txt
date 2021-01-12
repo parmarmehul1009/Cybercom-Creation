@@ -1,4 +1,4 @@
-+++++++++++++++++++++++++      2021-01-11    +++++++++++++++++++++++++++
++++++++++++++++++++++++++      2021-01-12    +++++++++++++++++++++++++++
 
 ---> Today i have learn from videos
     - what happen to our code?
@@ -30,3 +30,22 @@
         - while loop
         - break and continue statement
         - print loop in reverce order
+
+--> DOCTYPE in HTML
+    - to define the type of document is HTML or javaScript or php or etc.
+    - it is easy for browser compiller to compile the page base on DOCTYPE
+
+--> then ptactice on HTML and CSS
+    - how the <meta> is used for different perpose
+    - to refresh the page
+    - to store the cookie information
+    - to write the name of thr author
+    - to redirect the page
+    - to show the description about the webpage
+    - to show which encription method is used in this webpage
+
+--> how to use the external CSS and javaScript
+
+--> What is <noscript> what is use of this
+
+--> make HTML_practice1 from the today's practice folder
