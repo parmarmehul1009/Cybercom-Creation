@@ -1,24 +1,25 @@
 function adddata() {
-    var name = document.getElementById('name')
-    var email = document.getElementById('email')
-    var dob = document.getElementById('dob')
+    var name1 = document.getElementById('name').value;
+    var email1 = document.getElementById('email').value;
+    var dob1 = document.getElementById('dob').value;
 
-    var arry = []
+    var excercise_4 = []
 
     var person = {
-        name: name,
-        email: email,
-        dob: dob,
-    }
+        name: name1,
+        email: email1,
+        dob: dob1,
+    };
 
-    if (localStorage.getItem('array')) {
-        array = JSON.parse(localStorage.getItem('array'));
-        array.push(person);
-        localStorage.setItem("array", JSON.stringify(array));
-        alert("Record added in array at index " + array.length);
+    if (localStorage.getItem('excercise_4')) {
+        excercise_4 = JSON.parse(localStorage.getItem('excercise_4'));
+        excercise_4.push(person);
+        localStorage.setItem("excercise_4", JSON.stringify(excercise_4));
+        alert("Record added in excercise_4 at index " + (excercise_4.length - 1));
     } else {
-        localStorage.setItem("array", array);
-        alert("Frist Record added in array at index " + array.length);
+        excercise_4.push(person);
+        localStorage.setItem("excercise_4", JSON.stringify(excercise_4));
+        alert("Frist Record added in excercise_4 at index " + (excercise_4.length - 1));
     }
 
 }
