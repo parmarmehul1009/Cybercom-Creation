@@ -1,0 +1,21 @@
++++++++++++++++++++++++++      2021-02-04    +++++++++++++++++++++++++++
+
+--> Today i have practice on given Excercise
+    1. A program to list the properties of an object.
+
+    2. Add multiple objects in array and store it in local storage.
+        Object contains the below properties,
+        Name, Age, Email, Telephone Number.
+        Display the multiple objects in table structure.
+
+    3. A program to sort an array of objects.
+
+    4. Create one html form that contain the below fields,
+        Name, Email, Date of birth.
+        On click of submit button, Store the data as object in one single array. (array will be same for all records)
+        Display the data in one table format another page that is, view.html
+
+
+--> watch the video of javascript 
+
+--> i have more practice on it for practical exam
