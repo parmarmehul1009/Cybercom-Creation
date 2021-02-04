@@ -1,0 +1,51 @@
++++++++++++++++++++++++++      2021-01-12    +++++++++++++++++++++++++++
+
+---> Today i have learn from videos
+    - what happen to our code?
+        - first code pass by parser it check the code line by line
+        - check the syntex of the code
+        - and at the end run the code
+    - Execution Contexts
+    - Execution Stacks
+    - Variable objects
+    - Hoisting 
+        - Hoisting in function that allow to use function before diclaration of function 
+        - because the function run and stored in variable befor start the code Execution
+        - Hoisting in variable is it return undefined if we use variable before assign the value of variable
+    - scoping in javaScript
+        - globle scoping
+        - function scoping
+        - lexicle scoping (function inside the function scoping)
+    - this Key word
+        - this in globle scop
+        - this in function scop
+    - objects and properties
+        - how to define the objects
+        - how to access the value from the objects
+        - object.variable_name
+        - object['variable_name']
+        - function in object
+    - loops in javaScript
+        - for loop
+        - while loop
+        - break and continue statement
+        - print loop in reverce order
+
+--> DOCTYPE in HTML
+    - to define the type of document is HTML or javaScript or php or etc.
+    - it is easy for browser compiller to compile the page base on DOCTYPE
+
+--> then ptactice on HTML and CSS
+    - how the <meta> is used for different perpose
+    - to refresh the page
+    - to store the cookie information
+    - to write the name of thr author
+    - to redirect the page
+    - to show the description about the webpage
+    - to show which encription method is used in this webpage
+
+--> how to use the external CSS and javaScript
+
+--> What is <noscript> what is use of this
+
+--> What is different between localStorage and sessionStorage
