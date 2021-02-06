@@ -6,7 +6,7 @@ const errormessage = document.getElementById('errormessage');
 let admin = localStorage.getItem('admin');
 if (localStorage.getItem('admin')) {
     register.setAttribute('disabled', 'disabled');
-    // register.style.opacity = '.5';
+    register.style.opacity = '.3';
 }
 login.addEventListener('click', function() {
     if (admin) {

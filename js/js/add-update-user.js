@@ -1,7 +1,7 @@
 var adduser = document.getElementById('adduser');
 var updateuser = document.getElementById('updateuser');
 
-
+// get the value from the user
 let name2 = document.getElementById('name');
 let email2 = document.getElementById('email');
 let password2 = document.getElementById('password');
@@ -16,10 +16,10 @@ if (localStorage.getItem('user')) {
 let flag = false;
 
 adduser.addEventListener('click', function adduser() {
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    var birthdate = document.getElementById('birthdate').value;
+    var name = name2.value;
+    var email = email2.value;
+    var password = password2.value;
+    var birthdate = birthdate2.value;
     for (user in users) {
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         if (reg.test(email) == false) {
@@ -72,12 +72,51 @@ adduser.addEventListener('click', function adduser() {
 
 
 
+updateuser.addEventListener('click', function() {
+    var name = name2.value;
+    var email = email2.value;
+    var password = password2.value;
+    var birthdate = birthdate2.value;
+    var id = document.getElementById('id').value;
 
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
+    if (reg.test(email) == false) {
+        alert('Invalid Email Address');
+        window.location.href = 'user.html';
+    } else {
+        if (name == '' || email == '' || password == '' || birthdate == '') {
+            alert('all field are mandatory');
+            window.location.href = 'user.html';
+        } else {
 
-
-
-
+            var userdetails = {
+                name: name,
+                email: email,
+                password: password,
+                birthdate: birthdate,
+                birthdate1: birthdate,
+                calculateAge: function() {
+                    var dob = new Date(birthdate);
+                    var month_diff = Date.now() - dob.getTime();
+                    var age_dt = new Date(month_diff);
+                    var year = age_dt.getUTCFullYear();
+                    var age = Math.abs(year - 1970);
+                    var date1 = birthdate.split('-');
+                    var mm = date1[1];
+                    var dd = date1[2];
+                    var yy = date1[0];
+                    this.birthdate = dd + '-' + mm + '-' + yy;
+                    this.age = age;
+                },
+            }
+            userdetails.calculateAge();
+            users[id] = userdetails;
+            localStorage.setItem("user", JSON.stringify(users));
+            alert('User Upated Sucessfully');
+        }
+    }
+});
 
 
 let edituser = function(id) {
