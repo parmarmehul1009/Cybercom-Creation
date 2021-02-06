@@ -17,5 +17,6 @@ logout.addEventListener('click', function() {
 });
 
 if (!sessionStorage.getItem('admin')) {
+    alert('Please login First.');
     window.location.href = "login.html";
 }

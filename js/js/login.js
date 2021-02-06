@@ -4,6 +4,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const errormessage = document.getElementById('errormessage');
 let admin = localStorage.getItem('admin');
+
 if (localStorage.getItem('admin')) {
     register.setAttribute('disabled', 'disabled');
     register.style.opacity = '.3';
@@ -47,3 +48,9 @@ login.addEventListener('click', function() {
         alert('No Admin Register Here');
     }
 });
+
+register.addEventListener('click', function() {
+    window.open("registration.html", "_self");
+
+    // window.localStorage.href = "registration.html";
+})
