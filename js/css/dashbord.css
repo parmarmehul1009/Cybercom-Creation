@@ -1,0 +1,59 @@
+.container.body-container {
+    border: solid 2px black;
+    height: 600px;
+    padding: 0px;
+    display: flex;
+}
+
+.left-div {
+    background-color: chocolate;
+    border-right: solid 2px black;
+    width: 25%;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: inherit;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.right-div {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.right-sub {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sub-sub {
+    margin: 15px;
+    border: solid 2px black;
+    width: 200px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+#div-1 {
+    background-color: lightcoral;
+}
+
+#div-2 {
+    background-color: orchid;
+}
+
+#div-3 {
+    background-color: peru;
+}
+
+.record {
+    font-size: 25px;
+}

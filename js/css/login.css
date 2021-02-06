@@ -1,0 +1,16 @@
+.login {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    background-color: darksalmon;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+}

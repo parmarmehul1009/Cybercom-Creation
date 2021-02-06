@@ -1,0 +1,19 @@
+.main-div {
+    border: solid black 2px;
+}
+
+.register {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    background-color: darksalmon;
+}
