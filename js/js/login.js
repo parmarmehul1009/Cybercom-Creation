@@ -22,6 +22,25 @@ login.addEventListener('click', function() {
                 alert('Welcome Admin.!');
                 sessionStorage.setItem("admin", JSON.stringify(admin[adm]));
                 window.location = 'dashboard.html';
+            } else {
+
+                let users = JSON.parse(localStorage.getItem('user'));
+
+                emailValue = email.value;
+                passwordValue = password.value;
+
+                for (let user in users) {
+
+                    if (emailValue === users[user]['email'] && passwordValue === users[user]['password']) {
+                        alert('Welcome User.!');
+                        users[user]['id'] = user;
+                        users[user]['logintime'] = new Date().toLocaleString();
+                        localStorage.setItem("user", JSON.stringify(users));
+                        sessionStorage.setItem("user", JSON.stringify(users[user]));
+                        window.location.href = 'subuser.html';
+                    }
+                }
+                errormessage.textContent = "Enter Valid Email OR password"
             }
         }
     } else {
