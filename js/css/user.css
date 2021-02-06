@@ -1,0 +1,54 @@
+.container.body-container {
+    border: solid 2px black;
+    height: 600px;
+    padding: 0px;
+    display: flex;
+}
+
+.left-div {
+    background-color: chocolate;
+    border-right: solid 2px black;
+    width: 25%;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    height: inherit;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}
+
+.right-div {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.right-sub1 {
+    margin-top: 20px;
+}
+
+.form1 {
+    display: flex;
+}
+
+.input-tag {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 90%;
+}
+
+.add-user {
+    background-color: peru;
+    width: 100px;
+    color: white;
+}
+
+table {
+    border: solid 1px black;
+}
+
+#updateuser {
+    display: none;
+}

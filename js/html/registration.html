@@ -19,7 +19,7 @@
             <h3>registration</h3>
         </div>
         <div class="register">
-            <form class="form1 text-center flex">
+            <form class="form1 text-center flex" onsubmit="return addadmin()" action="login.html" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
 
@@ -50,7 +50,7 @@
                 </div>
 
                 <p style=" font-weight: bold;">
-                    <input type="checkbox" id="termsChkbx" /> terms and conditions
+                    <input type="checkbox" id="termsChkbx" onchange="isChecked(this, 'register')" /> terms and conditions
                 </p>
 
                 <input type="submit" class="btn btn-sm" name="register" value="Register Now" id="register" disabled="disabled">
