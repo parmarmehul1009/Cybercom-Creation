@@ -44,32 +44,29 @@ adduser.addEventListener('click', function adduser() {
                 password: password,
                 birthdate: birthdate,
                 birthdate1: birthdate,
-                calculateAge: function() {
-                    var dob = new Date(birthdate);
-                    var month_diff = Date.now() - dob.getTime();
-                    var age_dt = new Date(month_diff);
-                    var year = age_dt.getUTCFullYear();
-                    var age = Math.abs(year - 1970);
-                    var date1 = birthdate.split('-');
-                    var mm = date1[1];
-                    var dd = date1[2];
-                    var yy = date1[0];
-                    this.birthdate = dd + '-' + mm + '-' + yy;
-                    this.age = age;
-                },
-
             }
-            userdetails.calculateAge();
+            calculateage(userdetails);
             users.push(userdetails)
             localStorage.setItem("user", JSON.stringify(users));
             alert('User Added Sucessfully');
             return true;
         }
     }
-
-
 });
 
+function calculateage(userdetails) {
+    var dob = new Date(userdetails['birthdate']);
+    var month_diff = Date.now() - dob.getTime();
+    var age_dt = new Date(month_diff);
+    var year = age_dt.getUTCFullYear();
+    var age = Math.abs(year - 1970);
+    var date1 = userdetails['birthdate'].split('-');
+    var mm = date1[1];
+    var dd = date1[2];
+    var yy = date1[0];
+    userdetails['age'] = dd + '-' + mm + '-' + yy;
+    userdetails['age'] = age;
+};
 
 
 updateuser.addEventListener('click', function() {
@@ -96,21 +93,8 @@ updateuser.addEventListener('click', function() {
                 password: password,
                 birthdate: birthdate,
                 birthdate1: birthdate,
-                calculateAge: function() {
-                    var dob = new Date(birthdate);
-                    var month_diff = Date.now() - dob.getTime();
-                    var age_dt = new Date(month_diff);
-                    var year = age_dt.getUTCFullYear();
-                    var age = Math.abs(year - 1970);
-                    var date1 = birthdate.split('-');
-                    var mm = date1[1];
-                    var dd = date1[2];
-                    var yy = date1[0];
-                    this.birthdate = dd + '-' + mm + '-' + yy;
-                    this.age = age;
-                },
             }
-            userdetails.calculateAge();
+            calculateage(userdetails);
             users[id] = userdetails;
             localStorage.setItem("user", JSON.stringify(users));
             alert('User Upated Sucessfully');
