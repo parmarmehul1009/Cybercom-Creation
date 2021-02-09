@@ -1,0 +1,19 @@
++++++++++++++++++++++++++      2021-02-09    +++++++++++++++++++++++++++
+
+-->	Today i have learn the basic about the PHP and learn the following terms
+		- oops concept
+        - how to usefull oops in php
+        - how to connect the database using oops
+        - create the function to connect with database-
+        - insert data using oops function
+        - update data using oops function
+        - delete data using oops function
+
+--> create the web-application using the oops concept
+--> put it into practice file
+--> practice more for tomrrow exam
+
+-->	Create the form for practice
+	enter the value and display records on another page
+    edit the data also in database
+    delete the data from database
